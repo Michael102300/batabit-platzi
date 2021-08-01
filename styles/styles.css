@@ -150,10 +150,11 @@ main {
 
 .main-currency-table {
   width: 70%;
+  scroll-snap-align: center;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  margin: 0 40px;
   font-family: "Inter", sans-serif;
 }
 
@@ -255,7 +256,8 @@ main {
   min-width: 235px;
   max-width: 500px;
   height: 360px;
-  margin: 0 auto;
+  scroll-snap-align: center;
+  margin: 0 40px;
   font-family: "Inter", sans-serif;
 }
 
@@ -601,4 +603,12 @@ footer .left ul {
 .left li a {
   text-decoration: none;
   color: var(--just-white);
+}
+
+.main-exchange-tables-container {
+  display: flex;
+  height: 416px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
